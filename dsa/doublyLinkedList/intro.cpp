@@ -28,6 +28,17 @@ void display(Node* head) {
     cout<<"NULL"<<endl;
 }
 
+void displayFromTail(Node* tail) {
+    // takes the tail as temp and keeps printing the data in reverse order till temp->prev is not NULL
+    Node* temp = tail;
+    cout<<"NULL";
+    while(temp != NULL){
+        cout << "<-" << temp->data;
+        temp = temp->prev;
+    }
+    cout << endl;
+}
+
 void insertAtHead(Node* &head, int val) {
     Node* n = new Node(val);
     n->next = head;
@@ -78,7 +89,7 @@ int main() {
     temp1->next = temp2;
     temp2->prev = temp1;
     getTail(head, tail);
-
     display(head);
+    displayFromTail(tail);
     return 0;
 };
