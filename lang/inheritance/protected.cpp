@@ -4,6 +4,7 @@
 using namespace std;
 
 // Protected Inheritance with example
+//
 
 class Animal {
     private:
