@@ -4,7 +4,7 @@
 using namespace std;
 
 // Protected Inheritance with example
-//
+// Protected members are accessible in the child class but not in the main function
 
 class Animal {
     private:
