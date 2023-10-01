@@ -1,4 +1,4 @@
-// Child classes inherit protected members too of the parent class
+// Child classes also inherit the protected members of the parent class
 
 #include <iostream>
 using namespace std;
